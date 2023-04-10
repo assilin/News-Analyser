@@ -342,9 +342,12 @@ button {
     border-radius: 10px;
     text-align: left;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    &__inner {
+        height: 304px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     
     &__body {
         padding-left: 24px;

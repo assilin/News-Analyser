@@ -291,6 +291,9 @@ button {
   background-color: #ffffff;
   border-radius: 10px;
   text-align: left;
+}
+.newscard__inner {
+  height: 304px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
