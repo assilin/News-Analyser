@@ -14,18 +14,18 @@ button {
 }
 
 .wrapper{
-  max-width: 1440px;
+  max-width: 1232px;
   margin-left: auto;
   margin-right: auto;
 }
 .header {
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
-}
-.header__inner {
   color: #ffffff;
 }
 .header__image {
-  background-image: url("/images/georgia-de-lotz.png");
+  background-image: url("/images/bg_image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .header__top {
   height: 80px;
@@ -153,23 +153,20 @@ button {
   line-height: 24px;
 }
 
-.search-result__inner {
+.search-result {
   font-family: "Roboto Slab", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #B6BCBF;
+  background-color: #F5F6F7;
 }
 
 .search-result__searching {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 75px;
-
-  background: #F5F6F7;
   text-align: center;
 }
 .search-result__searching-text {
@@ -177,12 +174,8 @@ button {
 }
 .search-result__nothing-found {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 80px;
-
-  background: #F5F6F7;
   text-align: center;
 }
 .search-result__nothing-found-title {
@@ -206,11 +199,8 @@ button {
   width: 356px;
 }
 .search-result__results {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 104px;
   
   background: #F5F6F7;
   font-style: normal;
@@ -228,7 +218,6 @@ button {
   color: #1A1B22;
 }
 .search-result__look-analyst {
-  margin-right: 130px;
   bottom: 64px;
 }
 .search-result__content {
@@ -346,11 +335,8 @@ button {
 }
 
 .about-developer__inner {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 78px;
   padding-bottom: 78px;
-  padding-left: 104px;
 
   background-color: #ffffff;
   display: flex;
@@ -382,8 +368,6 @@ button {
 }
 
 .footer__inner {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 30px;
   padding-bottom: 25px;
 
@@ -428,3 +412,10 @@ button {
 .social__logo {
   margin-left: 27.89px;
 }/*# sourceMappingURL=styles.css.map */
+
+@media (max-width: 1440px) {
+  .header__image {
+    background-size: auto;
+    background-position-x: center;
+  }
+}
