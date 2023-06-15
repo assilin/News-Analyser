@@ -40,17 +40,15 @@ button {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  position: relative;
-  left: 7.22%;
 }
 .header__menu {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  position: relative;
-  right: 7.01%;
 }
 .header__divide-line {
+  position: relative;
+  top: 81px;
   height: 1px;
   background: rgba(196, 196, 196, 0.01);
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
