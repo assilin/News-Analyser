@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap");
-body, ul, li, p, img {
+body, ul, li, p, img, div {
   margin: 0;
   padding: 0;
 }
@@ -135,7 +135,7 @@ button {
 .search-form__search-button {
   display: flex;
   align-items: center;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 168px;
   height: 64px;
   background: #2F71E5;
@@ -221,9 +221,7 @@ button {
 .search-result__content {
   margin-top: 64px;
   display: flex;
-}
-.search-result__card {
-  margin-right: 16px;
+  justify-content: space-between;
 }
 .search-result__more-button {
   margin-left: auto;
@@ -268,15 +266,13 @@ button {
 }
 
 .newscard {
-  box-sizing: border-box;
   width: 400px;
-  height: 576px;
   background-color: #ffffff;
   border-radius: 10px;
   text-align: left;
 }
 .newscard__inner {
-  height: 304px;
+  height: 299px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -288,22 +284,16 @@ button {
 .newscard__image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 400px;
   height: 272px;
 }
 .newscard__date {
-  margin-top: 20px;
+  margin-top: 15px;
 
   font-family: "Source Sans Pro";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
 }
 .newscard__title {
   margin-top: 12px;
 
-  font-family: "Roboto Slab";
-  font-weight: 400;
   font-size: 26px;
   line-height: 30px;
   color: #1A1B22;
@@ -312,7 +302,6 @@ button {
   margin-top: 16px;
 
   font-family: "Roboto";
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #1A1B22;
@@ -323,7 +312,6 @@ button {
 .newscard__source {
   margin-bottom: 24px;
 
-  font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -377,16 +365,11 @@ button {
   font-weight: 400;
 }
 .footer__link {
-  left: 7.22%;
   text-decoration: none;
   color: #b6bcbf;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 22px;
-}
-.footer__social {
-  position: relative;
-  right: 7.01%;
 }
 
 .footer-menu__list {
