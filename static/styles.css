@@ -10,10 +10,11 @@ body {
 }
 
 button {
-  outline: none;
+  border: 0;
+  cursor: pointer;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1232px;
   margin-left: auto;
   margin-right: auto;
@@ -21,8 +22,6 @@ button {
 .header {
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
   color: #ffffff;
-}
-.header__image {
   background-image: url("/images/bg_image.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -83,10 +82,6 @@ button {
   background-color: #ffffff;
 }
 
-.menu {
-  height: 100%;
-  width: 20%;
-}
 .menu__list {
   display: flex;
   flex-direction: row;
@@ -95,11 +90,11 @@ button {
   line-height: 80px;
 }
 .menu__item {
-  margin: 1px;
+  margin-left: 34px;
   list-style-type: none;
 }
 .menu__item_active-page {
-  margin: 1px;
+  margin-left: 34px;
   list-style-type: none;
   border-bottom: solid #ffffff 3px;
 }
@@ -124,18 +119,21 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-.search-form__search-placeholder {
+.search-form__search-input {
+  border: 0;
+  outline: none;
   width: 376px;
   margin-left: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+.search-form__search-input::placeholder {
   color: #B6BCBF;
 }
 .search-form__search-button {
   display: flex;
   align-items: center;
-  /* box-sizing: border-box; */
   width: 168px;
   height: 64px;
   background: #2F71E5;
@@ -149,6 +147,7 @@ button {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  color: #ffffff;
 }
 
 .search-result {
@@ -229,16 +228,12 @@ button {
   margin-top: 64px;
 
   display: flex;
+  justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   width: 288px;
   height: 64px;
   background: #ffffff;
   border-radius: 32px;
-}
-.search-result__more-button-name {
-  margin-left: auto;
-  margin-right: auto;
 
   font-family: "Roboto";
   font-weight: 500;

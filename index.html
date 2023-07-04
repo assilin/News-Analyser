@@ -17,43 +17,43 @@
 
 <body>
   <header class="header">
-    <div class="header__image">
-      <div class="header__divide-line"></div>
-      <div class="wrapper">
-        <div class="header__top">
-          <div class="logo header__logo">
-            <p>NewsAnalyzer</p>
-          </div>
-          <nav class="menu header__menu">
-            <ul class="menu__list">
-              <li class="menu__item_active-page">
-                <a class="link menu__link_active-page" href="#">Main</a>
-              </li>
-              <li class="menu__item">
-                <a class="link menu__link" href="#">About the Project</a>
-              </li>
-            </ul>
-          </nav>
+    <div class="header__divide-line"></div>
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="logo header__logo">
+          <p>NewsAnalyzer</p>
+        </div>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item_active-page">
+              <a class="link menu__link_active-page" href="#">Main</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="about.html">About the Project</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__content">
+        <div class="header__title">
+          <p>What’s going on<br>in the world?</p>
+        </div>
+        <div class="header__hint">
+          <p>Enter any topic in the search and find out how popular it was<br>in the news last week.</p>
         </div>
 
-        <div class="header__content">
-          <div class="header__title">
-            <p>What’s going on<br>in the world?</p>
-          </div>
-          <div class="header__hint">
-            <p>Enter any topic in the search and find out how popular it was<br>in the news last week.</p>
-          </div>
+        <form action="" method="">
           <div class="search-form header__search-form">
             <div class="search-form__search-field">
-              <div class="search-form__search-placeholder">
-                <p>Enter news subject</p>
-              </div>
+              <input class="search-form__search-input" type="text" id="search-query" name="search-query" placeholder="Enter news subject">
             </div>
-            <div class="search-form__search-button">
+            <button class="search-form__search-button">
               <p class="search-form__search-button-name">Search</p>
-            </div>
+            </button>
           </div>
-        </div>
+        </form>
+
       </div>
     </div>
   </header>
@@ -159,12 +159,13 @@
           </div>
         </div>
         <div class="search-result__bottom">
-          <div class="search-result__more-button">
-            <div class="search-result__more-button-name">
+          <form action="" method="">
+            <button class="search-result__more-button">
               <p>More results</p>
-            </div>
+            </button>
+          </form>
           </div>
-        </div>
+          
       </div>
     </div>
   </div>
@@ -195,10 +196,10 @@
         <div class="footer__menu">
           <ul class="footer-menu__list">
             <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">Main</a>
+              <a class="footer-menu__link" href="index.html">Main</a>
             </li>
             <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">About the Project</a>
+              <a class="footer-menu__link" href="about.html">About the Project</a>
             </li>
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="#">Yandex.Practicum</a>
