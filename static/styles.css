@@ -36,10 +36,13 @@ button {
 .header__logo {
   display: flex;
   align-items: center;
+}
+.logo__link {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #ffffff;
 }
 .header__menu {
   font-weight: 500;
@@ -104,13 +107,14 @@ button {
   font-size: 18px;
   line-height: 24px;
   color: #b6bcbf;
-  text-decoration: none;
 }
 .menu__link_active-page {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+}
+.link {
   text-decoration: none;
 }
 
@@ -199,7 +203,7 @@ button {
 .search-result__results {
   padding-top: 80px;
   padding-bottom: 80px;
-  
+
   background: #F5F6F7;
   font-style: normal;
 }

@@ -11,6 +11,7 @@ body {
 
 button {
   outline: none;
+  cursor: pointer;
 }
 
 code {
@@ -38,10 +39,14 @@ code {
 .header__logo {
   display: flex;
   align-items: center;
+}
+.logo__link {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #1a1b22;
+
 }
 .header__menu {
   font-weight: 500;
@@ -84,13 +89,14 @@ code {
   font-size: 18px;
   line-height: 24px;
   color: #b6bcbf;
-  text-decoration: none;
 }
 .menu__link_active-page {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #1A1B22;
+}
+.link {
   text-decoration: none;
 }
 

@@ -22,7 +22,7 @@
     <div class="wrapper">
       <div class="header__top">
         <div class="logo header__logo">
-          <p>NewsAnalyzer</p>
+          <a class="link logo__link" href="index.html">NewsAnalyzer</a>
         </div>
         <nav class="menu header__menu">
           <ul class="menu__list">
@@ -87,10 +87,10 @@
         <div class="footer__menu">
           <ul class="footer-menu__list">
             <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">Main</a>
+              <a class="footer-menu__link" href="index.html">Main</a>
             </li>
             <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">About the Project</a>
+              <a class="footer-menu__link" href="about.html">About the Project</a>
             </li>
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="#">Yandex.Practicum</a>
@@ -98,8 +98,10 @@
           </ul>
         </div>
         <div class="social footer__social">
-          <a class="social__link" href="#">
+          <a class="social__link" href="www.linkedin.com/in/andrei-silin">
             <img class="social__logo" src="images\linkedin.svg" alt="LinkedIn">
+          </a>
+          <a class="social__link" href="https://www.facebook.com/profile.php?id=100009367365530">
             <img class="social__logo" src="images\facebook.svg" alt="Facebook">
           </a>
         </div>
@@ -111,7 +113,7 @@
   <script>
     anychart.onDocumentLoad(function () {
       var chart = anychart.bar();
-      
+
       // data
       var data = [
         ["19, Mon", 15],
@@ -155,7 +157,7 @@
       yAxisTop.orientation("top");
       yAxisTop.stroke("#F5F6F7");
       yAxisTop.ticks().stroke("#F5F6F7");
-      
+
       // vertical axis
       var xAxisLeft = chart.xAxis(0);
       xAxisLeft.stroke("#F5F6F7");
@@ -188,7 +190,7 @@
       yScaleBottom.minimum(0);
       yScaleBottom.maximum(100);
       yScaleBottom.ticks().interval(25);
-      
+
       // top
       var yScaleTop = anychart.scales.linear();
       yScaleTop.minimum(0);
