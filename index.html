@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Analyzer</title>
+
+  <link href="static/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__divide-line"></div>
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="logo header__logo">
+          <a class="link logo__link" href="#">NewsAnalyzer</a>
+        </div>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item_active-page">
+              <a class="link menu__link_active-page" href="#">Main</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="about.html">About the Project</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__content">
+        <div class="header__title">
+          <p>What’s going on<br>in the world?</p>
+        </div>
+        <div class="header__hint">
+          <p>Enter any topic in the search and find out how popular it was<br>in the news last week.</p>
+        </div>
+
+        <form action="" method="">
+          <div class="search-form header__search-form">
+            <div class="search-form__search-field">
+              <input class="search-form__search-input" type="text" id="search-query" name="search-query" placeholder="Enter news subject">
+            </div>
+            <button class="search-form__search-button">
+              <p class="search-form__search-button-name">Search</p>
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </header>
+  <div class="search-result">
+    <div class="wrapper">
+      <div class="search-result__searching">
+        <div class="search-result__searching-image">
+          <img src="images\Ellipse.png" alt="searching">
+        </div>
+        <div class="search-result__searching-text">
+          <p>Looking for news...</p>
+        </div>
+      </div>
+      <div class="search-result__nothing-found">
+        <div class="search-result__nothing-found-image">
+          <img src="images\not-found_v1.png" alt="not found">
+        </div>
+        <div class="title search-result__nothing-found-title">
+          <p>Nothing was found</p>
+        </div>
+        <div class="description search-result__nothing-found-description">
+          <p>Unfortunately, nothing was found on your request.</p>
+        </div>
+      </div>
+      <div class="search-result__results">
+        <div class="search-result__top">
+          <div class="title search-result__title">
+            <p>Search result</p>
+          </div>
+          <div class="look-analyst search-result__look-analyst">
+            <a class="look-analyst__link" href="paper.html">
+              <p>Show analyst</p>
+              <img class="arrow look-analyst__arrow" src="images\arrow.png" alt="Arrow">
+            </a>
+          </div>
+        </div>
+        <div class="search-result__content">
+          <div class="newscard search-result__card">
+            <img class="newscard__image" src="images\news_image_01.png" alt="news_image">
+            <div class="newscard__inner">
+              <div class="newscard__body">
+                <div class="newscard__date">
+                  <date>August 2, 2019</date>
+                </div>
+                <div class="title newscard__title">
+                  <p>Национальное достояние – парки</p>
+                </div>
+                <div class="description newscard__description">
+                  <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+                    национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                </div>
+              </div>
+              <div class="newscard__footer">
+                <div class="newscard__source">
+                  <p>ЛЕНТА.РУ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="newscard search-result__card">
+            <img class="newscard__image" src="images\news_image_02.png" alt="news_image">
+            <div class="newscard__inner">
+              <div class="newscard__body">
+                <div class="newscard__date">
+                  <date>August 2, 2019</date>
+                </div>
+                <div class="title newscard__title">
+                  <p>Лесные огоньки: история одной фотографии</p>
+                </div>
+                <div class="description newscard__description">
+                  <p>Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                    ускользающую красоту одного из местных чудес природы.</p>
+                </div>
+              </div>
+              <div class="newscard__footer">
+                <div class="newscard__source">
+                  <p>МЕДУЗА</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="newscard search-result__card">
+            <img class="newscard__image" src="images\news_image_03.png" alt="news_image">
+            <div class="newscard__inner">
+              <div class="newscard__body">
+                <div class="newscard__date">
+                  <date>August 2, 2019</date>
+                </div>
+                <div class="title newscard__title">
+                  <p>«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
+                </div>
+                <div class="description newscard__description">
+                  <p>Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их
+                    сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                </div>
+              </div>
+              <div class="newscard__footer">
+                <div class="newscard__source">
+                  <p>РИА</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-result__bottom">
+          <form action="" method="">
+            <button class="search-result__more-button">
+              <p>More results</p>
+            </button>
+          </form>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="about-developer">
+    <div class="wrapper">
+      <div class="about-developer__inner">
+        <div class="about-developer__photo">
+          <img class="photo" src="images\photo_as.png" alt="developer photo">
+        </div>
+        <div class="about-developer__text-block">
+
+          <div class="about-developer__title">
+            <p>About developer</p>
+          </div>
+          <div class="about-developer__description">
+            <p>My name is Andrei Silin. I started by studying Python and Computer Science, and soon realized that I prefer web development more</p>
+            <br/>
+            <p>So I began with HTML, CSS, JS and Django basics during CS50 Web Development course, and now I'm improving my frontend skills, including using BEM methodology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <a class="footer__link" href="#">© 2023 ValenciaJS</a>
+        <div class="footer__menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="index.html">Main</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="about.html">About the Project</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Yandex.Practicum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social footer__social">
+          <a class="social__link" href="https://www.linkedin.com/in/andrei-silin" target="_blank">
+            <img class="social__logo" src="images\linkedin.svg" alt="LinkedIn">
+          </a>
+          <a class="social__link" href="https://www.facebook.com/profile.php?id=100009367365530" target="_blank">
+            <img class="social__logo" src="images\facebook.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

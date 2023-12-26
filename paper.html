@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap"
+  rel="stylesheet">
+
+  <link href="static/paper.css" rel="stylesheet">
+  <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-base.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__divide-line"></div>
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="logo header__logo">
+          <a class="link logo__link" href="index.html">NewsAnalyzer</a>
+        </div>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="link menu__link" href="index.html">Main</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="about.html">About the Project</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="analysis">
+    <div class="wrapper">
+      <div class="analysis__nav">
+        <ul>
+          <li><a class="item" href="index.html">Main</a></li>
+          <li><a class="item__active" href="#">Analysis</a></li>
+        </ul>
+      </div>
+      <div class="analysis__search-query">
+        <p class="query__title">You asked for:</p>
+        <p class="query__content">«Travel»</p>
+      </div>
+      <div class="analysis__stat">
+        <p class="stat__title">Weekly news:</p>
+        <p class="stat__query">34 324</p>
+      </div>
+      <div class="analysis__stat">
+        <p class="stat__title">References in headings:</p>
+        <p class="stat__query">235</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart">
+    <div class="wrapper">
+      <div class="chart__title">
+        <p>Weekly analysis (day-by-day)</p>
+      </div>
+      <div class="chart_legend">
+        <div class="chart_legend__data">
+          <p>DATE</p>
+          <p>(AUGUST)</p>
+        </div>
+        <div class="chart_legend__count">
+          <p>NUMBER OF REFERENCES</p>
+        </div>
+
+      </div>
+      <div class="weekly-chart" id="weeklyChart"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <a class="footer__link" href="#">© 2023 ValenciaJS</a>
+        <div class="footer__menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="index.html">Main</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="about.html">About the Project</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Yandex.Practicum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social footer__social">
+          <a class="social__link" href="https://www.linkedin.com/in/andrei-silin" target="_blank">
+            <img class="social__logo" src="images\linkedin.svg" alt="LinkedIn">
+          </a>
+          <a class="social__link" href="https://www.facebook.com/profile.php?id=100009367365530" target="_blank">
+            <img class="social__logo" src="images\facebook.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+>
+  <script>
+    anychart.onDocumentLoad(function () {
+      var chart = anychart.bar();
+
+      // data
+      var data = [
+        ["19, Mon", 15],
+        ["20, Tue", 18],
+        ["21, Wed", 11],
+        ["22, Thu", 39],
+        ["23, Fri", 45],
+        ["24, Sat", 73],
+        ["25, Sun", 34]
+      ];
+      var series = chart.bar(data);
+      series.name("References")
+
+      // chart labels properties
+      var labels = series.labels();
+      labels.enabled(true);
+      labels.position("left-center");
+      labels.fontFamily("Roboto");
+      labels.fontColor("#FFFFFF");
+      labels.fontSize("12px");
+      labels.fontWeight("700");
+      labels.letterSpacing("0.4");
+
+      var labelsX = chart.xAxis(0).labels();
+      labelsX.enabled(true);
+      labelsX.width("89px");
+      labelsX.hAlign("left");
+      labelsX.fontFamily("Roboto");
+      labelsX.fontColor("#1A1B22");
+      labelsX.fontSize("18px");
+      labelsX.fontWeight("400");
+      labelsX.offsetX(-15);
+
+      // horizontal axis
+      // bottom
+      var yAxisBottom = chart.yAxis(0);
+      yAxisBottom.stroke("#F5F6F7");
+      yAxisBottom.ticks().stroke("#F5F6F7");
+      // top
+      var yAxisTop = chart.yAxis(1);
+      yAxisTop.orientation("top");
+      yAxisTop.stroke("#F5F6F7");
+      yAxisTop.ticks().stroke("#F5F6F7");
+
+      // vertical axis
+      var xAxisLeft = chart.xAxis(0);
+      xAxisLeft.stroke("#F5F6F7");
+      xAxisLeft.ticks().stroke("#F5F6F7");
+
+      // horizontal axis labels
+      // bottom
+      var labelsYBottom = chart.yAxis(0).labels();
+      labelsYBottom.offsetY(-20);
+      labelsYBottom.offsetX(4);
+      labelsYBottom.fontFamily("Roboto");
+      labelsYBottom.fontColor("#B6BCBF");
+      labelsYBottom.fontSize("12px");
+      labelsYBottom.fontWeight("400");
+      labelsYBottom.letterSpacing("0.4");
+
+      // top
+      var labelsYTop = chart.yAxis(1).labels();
+      labelsYTop.offsetY(20);
+      labelsYTop.offsetX(4);
+      labelsYTop.fontFamily("Roboto");
+      labelsYTop.fontColor("#B6BCBF");
+      labelsYTop.fontSize("12px");
+      labelsYTop.fontWeight("400");
+      labelsYTop.letterSpacing("0.4");
+
+      // scale
+      // bottom
+      var yScaleBottom = chart.yScale();
+      yScaleBottom.minimum(0);
+      yScaleBottom.maximum(100);
+      yScaleBottom.ticks().interval(25);
+
+      // top
+      var yScaleTop = anychart.scales.linear();
+      yScaleTop.minimum(0);
+      yScaleTop.maximum(100);
+      yScaleTop.ticks().interval(25);
+
+      // formatting chart
+      series.normal().fill("#2F71E5");
+      series.normal().stroke("#2F71E5", 0);
+      chart.barGroupsPadding(2.1);
+      chart.background().fill("#F5F6F7");
+      chart.container("weeklyChart");
+      chart.draw();
+    });
+  </script>
+</body>
+</html>

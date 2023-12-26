@@ -1,0 +1,332 @@
+body, ul, li, p, img, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: #ffffff;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+code {
+  background-color: #f5f6f7;
+  border: solid 1px #e3e4e6;
+}
+
+.header {
+  color: #1A1B22;
+  box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+.header__divide-line {
+  position: relative;
+  top: 81px;
+  height: 1px;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
+.header__top {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.logo__link {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1a1b22;
+
+}
+.header__menu {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.wrapper {
+  max-width: 1232px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: margin-left 0.5s, margin-right 0.5s;
+}
+.wrapper__carousel {
+  position: relative;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 136px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 103%;
+  line-height: 80px;
+}
+.menu__item {
+  margin-left: 34px;
+  list-style-type: none;
+}
+.menu__item_active-page {
+  margin-left: 34px;
+  list-style-type: none;
+  border-bottom: solid #1A1B22 3px;
+}
+.menu__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+}
+.menu__link_active-page {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+}
+.link {
+  text-decoration: none;
+}
+
+.to-clients {
+  font-style: normal;
+  font-weight: 400;
+  color: #1A1B22;
+}
+
+.title {
+  margin-top: 80px;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.for-clients__description {
+  max-width: 815px;
+  margin-top: 24px;
+  margin-bottom: 94px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.technology {
+  background-color: #f5f6f7;
+}
+.technology__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.technology__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 93px;
+  padding-bottom: 97px;
+}
+.technology__card {
+  margin-right: 40px;
+}
+
+.card__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.about-developer__inner {
+  padding-top: 78px;
+  padding-bottom: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-style: normal;
+  font-weight: 400;
+}
+.about-developer__text-block {
+  margin-top: 5px;
+  margin-left: 56px;
+}
+.about-developer__description {
+  max-width: 600px;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.github {
+  background-color: #f5f6f7;
+}
+.github__top {
+  padding-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.github__title {
+  margin-top: 0px;
+}
+.github__github-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+}
+.github__arrow {
+  width: 8.12px;
+  height: 12.41px;
+  margin-left: 10.29px;
+}
+.github__content {
+  margin-top: 64px;
+}
+
+.github-card {
+  margin-right: 8px;
+  margin-left: 8px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1A1B22;
+}
+.github-card__wrapper {
+  height: 264px;
+  margin-top: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.github-card__date {
+  color: #b6bcbf;
+  padding-bottom: 16px;
+}
+.github-card__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.github-card__name {
+  margin-left: 16px;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: "Roboto Slab";
+}
+.github-card__mail {
+  margin-top: 2px;
+  margin-left: 16px;
+}
+.github-card__mail-link {
+  text-decoration: none;
+  color: #1A1B22;
+}
+.github-card__description {
+  margin-top: 16px;
+  font-size: 16px;
+}
+.slick-prev {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  left: 10px;
+  top: 136px;
+}
+.slick-next {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  right: 10px;
+  top: 136px;
+}
+.slick-dots {
+  bottom: 80px;
+}
+.slick-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #f5f6f7 0%, #f5f6f7 1%, transparent 6%, transparent 94%, #f5f6f7 99%, #f5f6f7 100%);
+  opacity: 1;
+}
+footer {
+  background-color: #ffffff;
+}
+.footer__inner {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer__link {
+  text-decoration: none;
+  color: #b6bcbf;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+.footer-menu__item {
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+.footer-menu__link {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  text-decoration: none;
+}
+
+.social__logo {
+  margin-left: 27.89px;
+}/*# sourceMappingURL=about.css.map */
+
+@media (max-width: 1330px) {
+  .wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
